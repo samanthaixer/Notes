@@ -44,7 +44,11 @@ You might write code that is sent to the browser and executed in the browser
 
 ** USEFUL: ** cmd + ALT + I - Opens DevTools in Chrome - I tried this and it didn't work
 
-** Network ** - see the headers, response message and "waterfall"
+** From Alice: ** The other way to open developer tools (in chrome, but should be similar in other browsers):
+- right-click on page > inspect
+- View > Developer > Developer Tools
+
+** Network tab ** - see the headers, response message and "waterfall"
 
 
 ### Process diagram for first example
