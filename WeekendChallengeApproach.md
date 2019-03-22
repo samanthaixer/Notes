@@ -5,19 +5,18 @@
 - I update my README with my thoughts and plans first. That way I am more likely to keep adding to it as I go
 - The README is also the last thing I update with all of the latest useful info including how to use my code
 
-### Feature tests almost first (don't forget the README)
-
-- Write feature tests first
-  - This can be in IRB or in RSpec, and using webpages
-    - RSpec is easier to re-run
-    - IRB gives you flexibility to play around and explore scenarios
-    - Using the webpage helps you to see what the user would see
-
 ### Model the Domain
 
 - I usually start by writing out the nouns and verbs to give me an idea of my classes
 - I find sequence diagrams really useful as it helps me visualise dependencies
 - Class diagrams help me capture the user interactions
+
+### Write feature tests before unit tests
+
+  - This can be in IRB or in RSpec, and using webpages
+  - RSpec is easier to re-run
+  - IRB gives you flexibility to play around and explore scenarios
+  - Using the webpage helps you to see what the user would see
 
 ### Always TDD
 
