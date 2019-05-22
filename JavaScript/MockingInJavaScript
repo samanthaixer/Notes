@@ -1,0 +1,38 @@
+Reasons for mocking:
+
+1. To remove dependency on the frame object.
+2. To still allow testing of the behaviour of the game object
+
+Ways to mock:
+
+1. Pass in the frame function into the game function as a new spy
+  - Allows the game object to create a mock frame in test scenarios
+2. Spy on an existing frame object
+
+jasmine.createSpy("getName() spy")
+jasmine.createSpy("getName() spy").and
+
+expect(testPerson.getName).toHaveBeenCalled();
+
+How to mock in bowling
+
+1. When creating the game, pass in the Frame function
+2. Call the passed in frame function when creating a new frame
+
+
+
+NOTES:
+
+Current rules:
+
+1. If first frame, create new frame
+2. If the previous frame is not complete, add to frame (send in frame - could we send in frame number instead?)
+3. If the previous frame is complete, create new frame
+4. If game is complete, don't do anything
+
+New rules:
+1. If the game is not complete, continue
+2. If it's the first frame or if the previous frame is complete, create new frame
+3. Else (the game is incomplete, the previous frame is incomplete, it must be time to add to frame) add to frame
+extra - if adding to frame, pass in the frame number. Inside "add to frame"
+  check to see if frame has been passed in and if not, create new frame

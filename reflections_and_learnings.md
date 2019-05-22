@@ -41,4 +41,16 @@ During the weekend challenge, which took up way more of my personal time than I 
 #### Reflections
 
 This week has been really exciting as you can see your code coming together in a user interface. The debugging has gotten more complex as we try to navigate our way through routes and files but it's starting to feel a bit more real and a bit more useful.
-The afternoon exercise this week is to create a game as a web app. If you look at the exercise as a whole it seems completely overwhelming with a feeling of "I could never build that". However, if you break it down and tackle it user story by user story you can quickly build up functionality without worrying too much what it looks like. 
+The afternoon exercise this week is to create a game as a web app. If you look at the exercise as a whole it seems completely overwhelming with a feeling of "I could never build that". However, if you break it down and tackle it user story by user story you can quickly build up functionality without worrying too much what it looks like.
+
+### Week 4
+
+#### Key learnings
+
+- Databases and database modelling
+- RESTful
+- ORM - object relational mapping
+
+#### Reflections
+
+This week hasn't felt as good as previous weeks. The week is focussed on databases, which I have come across quite a bit in the past, and for some reason I have not forgotten all about them. Relational SQL databases to be specific. Although the week started with a good modelling workshop, we've pretty much been left to ourselves for the rest of the week. This would be great if the week was full of things I don't know and example exercises that I could use to practice. Instead, the week is light on course material and the extra exercise that Katerina gave me would have me practicing lots of coding but the modelling side of it was still lightweight. So instead I have decided to start the weekend challenge early so that I can get lots of it done, and to look up more advanced materials from the afternoon session.

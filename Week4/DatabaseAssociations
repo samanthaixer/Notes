@@ -1,0 +1,59 @@
+Examples and info from:
+https://codeburst.io/table-associations-in-relational-databases-4da90ddbd642
+
+#### One user might have many posts, and many comments.
+
+- One user has_many posts
+- One user has_many comments
+
+#### A post could also have many comments, but would be associated with both the user who made the post, and the user on whose profile the post belongs.
+
+- One post has_many comments
+- One post belongs_to a user who created it
+- One post belongs_to a user who posted it
+
+#### A comment could belong to only one post, and be associated with the user who created it.
+
+- One comment belongs_to one post
+- One comment belongs to one user
+
+
+
+- Associations: relationships between models.
+- Source model: the model defining an association.
+- Target model: the model to which an association is being defined.
+- Foreign key: a database column that contains references to another table.
+- Target key: a database column that a foreign key references.
+
+## BelongsTo
+
+The BelongsTo associations are ones where the foreign key for the one to one relation exists on the source model.
+An example of this would be our comment being part of a post, where the foreign key would be on the comment.
+By default the foreign key for a belongsTo relation will be generated from the target model name and the target primary key name.
+
+Target keys
+A target key is the column on the target model that the foreign key column on the source model points to. By default, the target key for a belongsTo relation will be the target model’s primary key.
+
+## Has one
+The second type of association is the has one association. This creates an association in which the foreign key for the relationship exists on the target model, thus establishing a one-to-one relationship.
+What’s the difference between Has One and Belongs To? Let’s use our User and Post example from earlier to see the difference. When we link to models in sequelize, they are paris of source and target models.
+If we define the Post as the source and the User as the target, it would look like this:
+post.belongsTo(User);
+or
+post.hasOne(User);
+Or if we define the User as the source and the Post as the target, it would look like this:
+User.belongsTo(Post);
+or
+User.hasOne(Post);
+
+### One To Many Associations:
+Another type of association is One to many.
+In our social networking site, this may be the association that we would most often need to use,
+as users would have many posts, and posts may have many comments. In sequelize, there are two ways we could define this:
+hasMany or belongsToMany
+
+
+hasMany creates an association in which the foreign key for the relationship exists on the target model. Establishes a one-to-many relationship.
+belongsToMany creates an association in which there are two foreign keys on a third table. Establishes a many-to-many relationship.
+As we begin building our site, making sure we are using the right associations between tables will ensure that our content updates and is displayed correctly.
+To see how these associations look in your text editor, and in a program like postico, I’ve uploaded a couple of screenshots for reference.
